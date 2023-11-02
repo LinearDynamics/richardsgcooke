@@ -1,78 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Hi there. Looking for something? I'm hosting this with GitHub Pages. Nice.-->
+    <!-- Hi there. Looking for something? I'm hosting this with GitHub Pages. Nice. Email me at richard+my domain-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 2em;
-            background-color: black;
-            color: white;
-        }        
-        .container {
-            background-color: #1a1a1a;  
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .profile-section {
-            display: flex;  
-            justify-content: space-between;
-            align-items: center;
-        }
-        .profile-content {
-            flex: 1;  
-            padding-right: 20px;
-        }
-        .profile-image {
-            border-radius: 50%;
-            width: 150px; 
-            height: 150px;
-            border: 3px solid #333; 
-        }
-        h1, h2, h3 {
-            color: white;
-        }
-        .listindent{
-            padding-left: 20px;
-        }
-        a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+       body {
+    font-family: Arial, sans-serif;
+    padding: 2em;
+    background-color: black;
+    color: white;
+    line-height: 1.6; 
+}
+.container {
+    background-color: #1a1a1a;  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+.profile-section {
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-content {
+    flex: 1;
+    padding-right: 20px;
+}
+.profile-image {
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px;
+    border: 3px solid #333; 
+    flex-shrink: 0;
+}
+h1, h2, h3 {
+    color: white;
+}
+.listindent{
+    padding-left: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #ff5500; 
+}
+.smallimage{
+    width: 200px;;
+}
+.companyimages{
+    width: 100px;;
+}
+.bigimage {
+    max-width: 100%; 
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .profile-content {
+        padding-right: 0; 
+        margin-bottom: 20px; 
+    }
 
-        a:hover {
-            color: #ff5500; 
-        }
-        .smallimage{
-            width: 20%;
-            height: 20%;
-        }
-        .bigimage{
-            width: 50%;
-            height: 50%;
-        }
+    .profile-section {
+        flex-direction: column; 
+    }
+}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="profile-section">
             <div class="profile-content">
-                <h1>About Me</h1>
+                <h1>Hi, I'm Richard, welcome to my corner of the internet.</h1>
                 <p>Hi! I'm a software developer/Dad/Husband/Son/Neighbor/Musician/Joker from Ottawa. I'm passionate about coding and technology but music is probably my greatest passion.</p>                
                 <h2>Things I Like to Do</h2>
                 <ul>
-                    <li>Learning new software development technologies</li>
-                    <li>Reading and considering new technologies</li>
+                    <li>Learning technologies. Especially in software but I am conversant in other areas like EE or whatever.</li>                    
                     <li>Writing music</li>
                     <li>Building and fixing things!</li>
-                    <li class="listindent">Why buy when you can build?!</li>
+                    <li class="listindent">Why buy when you can build?! I keep our washers and furnaces all in good repair.</li>
                     <li class="listindent">I've built entire bikes, speakers, a few electric guitars, shelves, odds and ends.</li>                    
+                    <li>Because of the cycling, I have some interest(but little applicable experience) in CFD(computational fluid dynamics). Aerodynamics is something that is pretty complex when in the real world but I would really like to have a better understanding.</li>
+                    <li>My list of interests is varied and long. Life is just too short!</li>
                 </ul>
             </div>
             <img src="https://i.imgur.com/XuHXICy.jpg" alt="Profile Image" class="profile-image">
@@ -81,7 +97,7 @@
     <div class="container">
         <h2>Here is my latest musical sketch that I improvised. I called it 'Braindrops'</h2>
         <p>Basically what I do is sit down with an instrument, begin making something, record that, add some parts. Eventually I will revisit each of my 'tunes' so that I can make full songs out of them.</p>
-        <p><a href="https://soundcloud.com/richard-cooke-618783373" target="_blank" class="highlight-link"><i class="material-icons">music_note</i>My Soundcloud</a></p>        
+        <p><a href="https://soundcloud.com/richard-cooke-618783373" target="_blank" class="highlight-link"><i class="material-icons">music_note</i><i class="material-icons">music_note</i>My Soundcloud<i class="material-icons">link</i></a></p>        
         <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1640198448&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/richard-cooke-618783373" title="Richard Cooke" target="_blank" style="color: #cccccc; text-decoration: none;">Richard Cooke</a> · <a href="https://soundcloud.com/richard-cooke-618783373/braindrops" title="Braindrops" target="_blank" style="color: #cccccc; text-decoration: none;">Braindrops</a></div>
     </div>
     <div class="container">
@@ -92,7 +108,7 @@
         <p>I do a little bit extra to make these sound 'good'. Everything is routed into my computer and into my favorite DAW Reaper. </p>
         <p>I mounted them to computer monitor telescopic arms. This lets me position them with greater ease. Also possibly isolates them from any vibrations that could leak into the desk and cause frequency resonances that could cause issues in tuning.</p>
         <p>Below are some screenshots that show how I EQ them so that they have a 'good' sound. It turns out that quality of sound is a subjective thing and is hotly debated. I have considered using tube amp simulators to add an extra bit of harmonic distortion so that I can emulate a classic hifi amp.</p>
-        <p>So there is another image down there of a full frequency 12/6/1 fearFull Greenboy instrument speaker that I also made. However at 48Hz-70Hz, there is a steep rolloff as a crossover so I can use it as a sub.</p>
+        <p>So there is another image down there of a full frequency 12/6/1 fEARful Greenboy instrument speaker that I also made. However at 48Hz-70Hz, there is a steep rolloff as a crossover so I can use it as a sub.</p>
         <p>I haven't measured the room or my responses but this is a pretty nice set up.</p>
         <a href="https://i.imgur.com/rPFZXEP.jpeg" target="_blank">
             <img src="https://i.imgur.com/rPFZXEP.jpeg" alt="Hitmakers" class="smallimage">
@@ -112,6 +128,7 @@
         <div class="container">
             <h2>Guitars, Reaper DAW, VSTs, and not having guitar pedals and stuff anymore!</h2>
             <p>So I gave up using pedals and amps. Digital is great fun.</p>
+            <p>I don't only use bias fx. There are so many awesome plugins out there. Instrument ones too. Did you know that you can use the output of the ReaTune plugin to control midi instruments?! Nothing but fun there.</p>
         </div>        
         <a href="https://i.imgur.com/R9qNX2T.png" target="_blank">
             <img src="https://i.imgur.com/R9qNX2T.png" alt="speaker" class="bigimage">
@@ -119,20 +136,44 @@
     </div>
     <div class="container">
         <h2>On coding and technology</h2>
-        <img src="https://i.imgur.com/6Vx2D2a.png" class="smallimage">
-        <img src="https://i.imgur.com/1uVmZiK.png" class="smallimage">
-        <img src="https://i.imgur.com/DvDe8pc.png" class="smallimage">        
+        <img src="https://i.imgur.com/6Vx2D2a.png" class="companyimages">
+        <img src="https://i.imgur.com/1uVmZiK.png" class="companyimages">
+        <img src="https://i.imgur.com/DvDe8pc.png" class="companyimages">        
         <p>It's all pretty Microsoft-ey. .NET 4.7 desktop/server stuff. Got into .net 5(core), 6, etc a few years ago. Microsoft was trying to unify their .net so that it is usable by all. Made a Blazor WASM dashboard recently which I really love using. Blazor is all basically C# and HTML/CSS. Performing loops and stuff is excellent and easy.</p>
-        <p>Been working on an Angular/TS app as well. Postgress DB. Various hosting.</p>
-        <p>I don't love vscode. Regular VS is better.</p>
+        <p>Been working on an Angular/TS app as well(c# dotnet core back end). Postgress DB. Various hosting.</p>
+        <p>I don't love vscode. Regular VS is better. Fight me.</p>
+        <p>My first computer was a Tandy CoCo3. I super miss it.</p>
     </div>
     <div class="container">
         <h2>Here is a picture of my family</h2>
         <p>jk. these are guitars I built(assembled)</p>
         <img src="https://i.imgur.com/6U3oEed.jpeg" class="bigimage">
-        <img src="https://i.imgur.com/YOsA7Ln.jpeg" class="bigimage">
-        
+        <img src="https://i.imgur.com/YOsA7Ln.jpeg" class="bigimage">        
     </div>
+<div class="container">
+    <h2>Here is my take on a 1x gravel bike.</h2>
+    <p>So it is a 29er carbon fiber MTB frame/Forks</p>
+    <ul>
+        <li>1x Sensah SRX Pro w/ 11sp dropbar shifter</li>
+        <li>Cassette is an 11-52. That means the biggest sprocket on the rear has a lot of teeth. IOW potential large gear ratio.</li>
+        <li>Chainring is a 52T(currently). So yeah, I could have a 1:1 ratio but you would be surprised at how steep it has to get for that to be useful!</li>
+        <li>Favero Assioma DUO-Shi(not because I am an athlete, it's because I am a nerd lol!)</li>
+        <li>Challenge, Strada Bianca TLR, Tire, 700x40C. In tan as one does.</li>
+        <li class="listindent">Holy heck these were hard to mount.</li>
+        <li>Crappy whatever rims/brakes</li>
+        <li>A nice saddle from aliexpress</li>
+        <li>BT speaker is almost as essential as water!!!</li>
+        <li>Some of the cabling is internally router. It was annoying to do on this bike as some of the mount points were pinching the cable housing and affecting shifting. <i class="material-icons">mood_bad</i></li>
+    </ul>
+    <a href="https://i.imgur.com/SL4H6NT.jpg" target="_blank">
+        <img src="https://i.imgur.com/SL4H6NT.jpg" alt="gravelbike" class="smallimage">
+    </a>    
+</div>
+<div class="container">
+    <h2>On humanity</h2>
+    <p>I have lots to say but generally I believe that we should carry more facts with us than opinions.</p>
+    <p>We should also aim to spend as much time with nature as possible.</p>
+</div>
     <h2>End of page. I'll add some more as time goes on!</h2>
 </body>
 </html>
