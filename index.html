@@ -7,72 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <style>
-       body {
-    font-family: Arial, sans-serif;
-    padding: 2em;
-    background-color: black;
-    color: white;
-    line-height: 1.6; 
-}
-.container {
-    background-color: #1a1a1a;  
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; 
-}
-.profile-section {
-    display: flex;  
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    align-items: center;
-}
-.profile-content {
-    flex: 1;
-    padding-right: 20px;
-}
-.profile-image {
-    border-radius: 50%;
-    width: 150px; 
-    height: 150px;
-    border: 3px solid #333; 
-    flex-shrink: 0;
-}
-h1, h2, h3 {
-    color: white;
-}
-.listindent{
-    padding-left: 20px;
-}
-a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-a:hover {
-    color: #ff5500; 
-}
-.smallimage{
-    width: 200px;;
-}
-.companyimages{
-    width: 100px;;
-}
-.bigimage {
-    max-width: 100%; 
-    height: auto;
-}
-@media screen and (max-width: 768px) {
-    .profile-content {
-        padding-right: 0; 
-        margin-bottom: 20px; 
-    }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2em;
+            background-color: black;
+            color: white;
+            line-height: 1.6;
+        }
 
-    .profile-section {
-        flex-direction: column; 
-    }
-}
+        .container {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .profile-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 3px solid #333;
+            flex-shrink: 0;
+        }
+
+        h1, h2, h3 {
+            color: white;
+        }
+
+        .listindent {
+            padding-left: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+            a:hover {
+                color: #ff5500;
+            }
+
+        .smallimage {
+            width: 200px;
+            ;
+        }
+
+        .companyimages {
+            width: 100px;
+            ;
+        }
+
+        .bigimage {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .profile-content {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .profile-section {
+                flex-direction: column;
+            }
+        }
     </style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0LQ5HVDJQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L0LQ5HVDJQ');
+    </script>
+
+
+
 </head>
 <body>
     <div class="container">
@@ -145,7 +173,7 @@ a:hover {
         <img src="https://i.imgur.com/6Vx2D2a.png" class="companyimages">
         <img src="https://i.imgur.com/1uVmZiK.png" class="companyimages">
         <img src="https://i.imgur.com/DvDe8pc.png" class="companyimages">
-        <p>It's all pretty Microsoft-ey. .NET 4.7 desktop/server stuff. Got into .net 5(core), 6, etc a few years ago. Microsoft was trying to unify their .net so that it is usable by all. Made a Blazor WASM dashboard recently which I really love using. Blazor is all basically C# and HTML/CSS. Performing loops and stuff is excellent and easy.</p>
+        <p>It's all pretty Microsoft-ey. .NET 4.7 desktop/server stuff. Got into .net 5(core), 6, etc a few years ago. Microsoft was trying to unify their .net so that it is usable by all. Made a Blazor WASM dashboard recently which I really loved. Blazor is all basically C# and HTML/CSS. Performing loops and stuff is excellent and easy.</p>
         <p>Been working on an Angular/TS app as well(c# dotnet core back end). Postgress DB. Various hosting.</p>
         <p>I don't love vscode. Regular VS is better. Fight me.</p>
         <p>My first computer was a Tandy CoCo3(Like a Commodore 64). I super miss it.</p>
@@ -191,3 +219,4 @@ a:hover {
     <p>Last edit: 2023-11-13</p>
 </body>
 </html>
+
