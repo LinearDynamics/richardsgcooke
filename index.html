@@ -68,6 +68,7 @@
             height: 150px;
             border: 3px solid #333;
             flex-shrink: 0;
+            transform: rotate(-18deg);
         }
 
         h1, h2, h3 {
@@ -103,7 +104,10 @@
             font-size: 12px;
             color: darkgray;
         }
-
+        .brdrbtm {
+            border-bottom: 1px solid white;
+            display: inline-block;
+        }
 
         a:hover {
             color: #ff5500;
@@ -118,8 +122,7 @@
         }
 
         .companyimages {
-            width: 100px;
-            ;
+            width: 100px;            
         }
 
         .bigimage {
@@ -136,17 +139,27 @@
             .profile-section {
                 flex-direction: column;
             }
+            #top-menu {
+                /*position: fixed;
+     top: 0;*/
+                width: 100%;
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                
+            }
         }
 
         #top-menu {
             /*position: fixed;
             top: 0;*/
             width: 100%;
-            background-color: #333;
+            /*background-color: #333;*/
             color: white;
             text-align: center;
             padding: 10px 0;
-            margin-top: -45px;
+            margin-top: -98px;
         }
 
         #top-menu a {
@@ -192,9 +205,9 @@
 <body>
     <div class="container">
         <div class="profile-section">
-            <div class="profile-content">
+            <!--<div class="profile-content">
                 <h1>Welcome</h1>
-            </div>
+            </div>-->
             <img src="https://i.imgur.com/XuHXICy.jpg" alt="Profile Image" class="profile-image">
         </div>
         <nav id="top-menu"></nav>
@@ -220,7 +233,7 @@
         <img src="https://i.imgur.com/6Vx2D2a.png" class="companyimages">
         <img src="https://i.imgur.com/1uVmZiK.png" class="companyimages">
         <img src="https://i.imgur.com/DvDe8pc.png" class="companyimages">
-        <p>It's all pretty Microsoft-ey. .NET 4.7 desktop/server stuff. Got into .net 5(core), 6, etc a few years ago. Microsoft was trying to unify their .net so that it is usable by all. Made a Blazor <s>WASM</s> server dashboard recently which I really loved. Blazor is all basically C# and HTML/CSS. Performing loops and stuff is excellent and easy. I aim to spend more time on learning Blazor and WASM in general. It's a funny thing.. we always need to provide a GUI. But is native better than a web gui? Some may say so. I think there are too many platforms and we need to be able to make powerful applications that are completely portable. It's almost like a virtual machine or container or whatever but in the browser. The user only cares about things working in a sane fashion.'</p>
+        <p>It's all pretty Microsoft-ey. .NET 4.7 desktop/server stuff. Got into .net 5(core), 6, etc a few years ago. Microsoft was trying to unify their .net so that it is usable by all. Made a Blazor <s>WASM</s> server dashboard recently which I really loved. Blazor is all basically C# and HTML/CSS. Performing loops and stuff is excellent and easy. I aim to spend more time on learning Blazor and WASM in general. It's a funny thing.. we always need to provide a GUI. But is native better than a web gui? Some may say so. I think there are too many platforms and we need to be able to make powerful applications that are completely portable. It's almost like a virtual machine or container or whatever but in the browser. <span class="brdrbtm">The user only cares about things working </span> in a sane fashion.</p>
         <p>Been working on an Angular/TS app as well(c# dotnet core back end). Postgress DB. Various hosting.</p>
         <p>I don't love vscode. Regular VS is better. Fight me.</p>
         <p>My first computer was a Tandy CoCo3(Like a Commodore 64). I super miss it.</p>
@@ -277,7 +290,7 @@
         </a>
         <h3>Here is a picture of my family</h3>
         <p>jk. these are guitars I built(assembled)</p>
-        <p>On the Strat, those EMGs soapbars ACTUALLY have a three coils. One humbucker and a single coil. I like how many sounds I can get from these.</p>
+        <p>On the Strat, those EMGs soapbars ACTUALLY have a three coils. One humbucker and a single coil. I like how many sounds I can get from these. I also added a latching switch because they are active pickups and the battery dies if you don't unplug. I need to use a make before break type switch because it will prevent the ugly POP.</p>
         <img src="https://i.imgur.com/hdYIBJC.jpeg" class="medimage">
         <img src="https://i.imgur.com/0bI07CB.jpeg" class="medimage">
         <img src="https://i.imgur.com/nkCixDp.jpeg" class="medimage">
