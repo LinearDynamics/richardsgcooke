@@ -2,6 +2,30 @@
 <html lang="en">
 <head>
     <!-- Hi there. Looking for something? I'm hosting this with GitHub Pages. Nice. Email me at richard+my domain-->
+    <!--
+                 
+            /;)
+           /;(
+           >_/
+           |-|
+           |-|
+           |-|
+           |-|
+           |-|
+           |-|
+           |-|
+       _   |-|
+      / \  |-|   _
+     :   `'|-|  /,\
+     :   ,`'-'`'/|:
+      \  \ ...   ;/
+       :  )...  ::
+       ; / ...  ::
+      / /  ___   \\
+     :  `-|||||.  \:
+     :        (\`-';
+      `._________,'
+    -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,8 +74,23 @@
             color: white;
         }
 
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+            ul li {
+                padding-left: 20px;
+            }
+
+                ul li::before {
+                    content: '•';
+                    padding-right: 10px;
+                    color: black;
+                }
+
         .listindent {
-            padding-left: 20px;
+            padding-left: 40px;
         }
 
         a {
@@ -71,11 +110,13 @@
         }
 
         .smallimage {
-            width: 200px;            
+            width: 200px;
         }
+
         .medimage {
             width: 300px;
         }
+
         .companyimages {
             width: 100px;
             ;
